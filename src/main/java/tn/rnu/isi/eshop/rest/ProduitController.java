@@ -33,7 +33,10 @@ public class ProduitController {
     public ProduitController(ProduitRepository produitRepository) {
         this.produitRepository = produitRepository;
     }
-
+/**
+ * ist<Produit> getAllProduits() 
+ * @return
+ */
     @GetMapping("/produits")
     public List<Produit> getAllProduits()  {
         return (List<Produit>) produitRepository.findAll();
